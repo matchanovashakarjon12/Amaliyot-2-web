@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Sahovat choyxonasida stol band qilish formasi va manzil.">
+  <title>Aloqa va stol band qilish — Sahovat choyxonasi</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body id="yuqori">
+<header class="site-header">
+  <p class="brand-mark">SC</p>
+  <h1>Aloqa va stol band qilish</h1>
+  <p class="tagline">Mehmonlarni kutib qolamiz</p>
+  <p>Sana, vaqt va mehmonlar sonini yozing, biz tasdiqlaymiz.</p>
+</header>
+
+<nav class="site-nav" aria-label="Asosiy navigatsiya">
+  <a class="logo" href="index.html">Sahovat choyxonasi</a>
+  <ul>
+    <li><a href="index.html">Bosh sahifa</a></li>
+    <li><a href="batafsil.html">Menyu haqida</a></li>
+    <li><a href="aloqa.html" aria-current="page">Aloqa</a></li>
+  </ul>
+</nav>
+
+<main>
+  <div class="ikki-ustun">
+    <div>
+      <section id="aloqa">
+        <h2>Stol band qilish</h2>
+        <form method="post">
+          <div class="maydon">
+            <label for="ism">Ismingiz</label>
+            <input type="text" id="ism" name="ism" required>
+          </div>
+          <div class="maydon">
+            <label for="telefon">Telefon raqamingiz</label>
+            <input type="tel" id="telefon" name="telefon" required pattern="\+998[0-9]{9}" placeholder="+998901234567" title="Raqam +998 bilan boshlanib, 9 ta raqam bilan davom etsin">
+          </div>
+          <div class="maydon">
+            <label for="pochta">Elektron pochta</label>
+            <input type="email" id="pochta" name="pochta">
+          </div>
+          <div class="maydon">
+            <label for="sana">Sana</label>
+            <input type="date" id="sana" name="sana" required>
+          </div>
+          <div class="maydon">
+            <label for="vaqt">Vaqt</label>
+            <input type="time" id="vaqt" name="vaqt">
+          </div>
+          <div class="maydon">
+            <label for="soni">Mehmonlar soni</label>
+            <input type="number" id="soni" name="soni" min="1" max="30" required>
+          </div>
+          <fieldset>
+            <legend>Joy turi</legend>
+            <label for="tapchan"><input type="radio" id="tapchan" name="joy" value="tapchan" checked> Tapchan</label>
+            <label for="zal"><input type="radio" id="zal" name="joy" value="zal"> Yopiq zal</label>
+            <label for="ayvon"><input type="radio" id="ayvon" name="joy" value="ayvon"> Ayvon</label>
+          </fieldset>
+          <div class="maydon">
+            <label for="taom">Oldindan buyurtma</label>
+            <select id="taom" name="taom">
+              <option value="">Keyin tanlayman</option>
+              <option value="palov">Palov</option>
+              <option value="shashlik">Shashlik</option>
+              <option value="manti">Manti</option>
+              <option value="salat">Achchiq-chuchuk</option>
+            </select>
+          </div>
+          <fieldset>
+            <legend>Qo'shimcha</legend>
+            <label for="choy"><input type="checkbox" id="choy" name="qoshimcha" value="choy"> Kelishimizga choy tayyor bo'lsin</label>
+            <label for="bola"><input type="checkbox" id="bola" name="qoshimcha" value="bola"> Bolalar uchun o'rindiq kerak</label>
+          </fieldset>
+          <div class="maydon">
+            <label for="izoh">Izoh</label>
+            <textarea id="izoh" name="izoh" rows="4"></textarea>
+          </div>
+          <div class="maydon">
+            <label for="rozilik"><input type="checkbox" id="rozilik" name="rozilik" required> Ma'lumotlarim band qilish uchun ishlatilishiga roziman</label>
+          </div>
+          <button class="tugma" type="submit">Stolni band qilish</button>
+        </form>
+        <p class="izoh">Bu kontaktlar namuna. Haqiqiy ma'lumot bilan almashtiring.</p>
+      </section>
+
+      <section>
+        <h2>Bizni toping</h2>
+        <iframe class="xarita" title="Sahovat choyxonasi joylashgan hududning xaritasi" src="https://www.google.com/maps?q=Urganch&amp;output=embed" loading="lazy"></iframe>
+      </section>
+    </div>
+
+    <aside>
+      <h2>Band qilish tartibi</h2>
+      <p>So'rovingizni yuboring, biz telefon orqali tasdiqlaymiz. Dam olish kunlari uchun bir kun oldin yozing.</p>
+    </aside>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-ichki">
+    <div>
+      <h2>Aloqa</h2>
+      <p>Email: <a href="mailto:info@example.com">info@example.com</a><br>
+      Telefon: <a href="tel:+998901234567">+998 90 123 45 67</a></p>
+    </div>
+    <div>
+      <h2>Ish vaqti</h2>
+      <p>Har kuni 08:00 dan 23:00 gacha.<br>Juma kuni 14:00 dan boshlab.</p>
+    </div>
+  </div>
+  <p class="nusxa">&copy; 2026 Sahovat choyxonasi. Amaliy ish uchun tayyorlangan namuna.</p>
+</footer>
+<a class="yuqoriga" href="#yuqori">Yuqoriga</a>
+</body>
+</html>
